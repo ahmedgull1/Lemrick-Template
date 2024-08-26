@@ -1,0 +1,1051 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid #000; */
+}
+
+.parent {
+    width: 100%;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 83% 17%;
+
+}
+
+
+.child1 {
+    border-right: none;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+.child1>img {
+    height: 30px;
+    width: 120px;
+}
+
+.child2 {
+    border-left: none;
+    padding-top: 26px;
+    word-spacing: 15px;
+    font-size: 10px;
+    color: black;
+}
+
+.parent2 {
+    display: grid;
+    height: 500px;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* border: 1px solid #000; */
+}
+
+/* .child3 {
+    border: 1px solid #000;
+
+} */
+
+.a {
+    position: relative;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    overflow: hidden;
+
+}
+
+.a>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition-duration: 2s;
+
+}
+
+.a:hover img {
+    cursor: pointer;
+    transform: scale(1.2) rotate(2deg);
+}
+
+
+.a>h1 {
+    position: absolute;
+    top: 290px;
+    left: 90px;
+    color: rgb(252, 247, 247);
+    font-size: 50px;
+
+}
+
+.butto {
+    position: absolute;
+    top: 370px;
+    left: 100px;
+    height: 47px;
+    width: 150px;
+    color: rgb(252, 247, 247);
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+    background-image:linear-gradient(to right,#F98EF8,#D48DFE)
+}
+.butto:hover{
+    background-image:linear-gradient(to left,#F98EF8,#D48DFE)
+}
+
+.achild::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(145, 143, 143);
+    width: 0.5px;
+    left: 40px;
+    top: 170px;
+    height: 60%;
+}
+
+.achild::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(145, 143, 143);
+    left: 10px;
+    top: 446px;
+    width: 70%;
+    height: 0.5px;
+}
+
+.bchild::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(145, 143, 143);
+    height: 0.5px;
+    left: 170px;
+    top: 50px;
+    width: 60%;
+}
+
+.bchild::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(145, 143, 143);
+    left: 415px;
+    top: 20px;
+    height: 70%;
+    width: 0.5px;
+}
+
+.b {
+    position: relative;
+    background: url(./2.jpg);
+    background-size: 100% 100%;
+    z-index: 123;
+    overflow: hidden;
+}
+
+.b::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50px;
+    top: 100px;
+    left: -50%;
+    background-color: rgb(233, 44, 75);
+    transition-duration: 0.5s;
+
+}
+
+.b:hover::before {
+    left: 0px;
+}
+
+.b::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50px;
+    top: 100px;
+    right: -50%;
+    transition-duration: 0.5s;
+    z-index: -1;
+    background-color: rgb(8, 2, 3);
+
+}
+
+.b:hover::after {
+    right: 0px;
+
+}
+
+.sear1 {
+    position: absolute;
+    top: 155px;
+    opacity: 0;
+    left: 80px;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    background: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+
+.b:hover .sear1 {
+    opacity: 1;
+    top: 110px;
+}
+
+.sear2 {
+    position: absolute;
+    top: 155px;
+    opacity: 0;
+    left: 145px;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    background: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.b:hover .sear2 {
+    opacity: 1;
+    top: 110px;
+}
+
+
+.c {
+    position: relative;
+}
+
+.c>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.c>h1 {
+    position: absolute;
+    color: white;
+    top: 100px;
+    left: 50px;
+}
+
+.d {
+    position: relative;
+    background: url(./4.jpg);
+    background-size: 100% 100%;
+    z-index: 123;
+    overflow: hidden;
+}
+
+.d::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50px;
+    top: 100px;
+    left: -50%;
+    background-color: rgb(240, 40, 83);
+    transition-duration: 0.5s;
+
+}
+
+.d:hover::before {
+    left: 0px;
+}
+
+.d::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50px;
+    top: 100px;
+    right: -50%;
+    transition-duration: 0.5s;
+    z-index: -1;
+    background-color: rgb(7, 2, 3);
+
+}
+
+.d:hover::after {
+    right: 0px;
+
+}
+
+.sear1 {
+    position: absolute;
+    top: 155px;
+    opacity: 0;
+    left: 80px;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    background: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+
+.d:hover .sear1 {
+    opacity: 1;
+    top: 110px;
+}
+
+.sear2 {
+    position: absolute;
+    top: 155px;
+    opacity: 0;
+    left: 145px;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    background: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.d:hover .sear2 {
+    opacity: 1;
+    top: 110px;
+}
+
+.e {
+    position: relative;
+    background: url(./5.jpg);
+    background-size: 100% 100%;
+    z-index: 123;
+    overflow: hidden;
+}
+
+.e::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50px;
+    top: 100px;
+    left: -50%;
+    background-color: rgb(233, 44, 75);
+    transition-duration: 0.5s;
+
+}
+
+.e:hover::before {
+    left: 0px;
+}
+
+.e::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50px;
+    top: 100px;
+    right: -50%;
+    transition-duration: 0.5s;
+    z-index: -1;
+    background-color: rgb(158, 151, 151);
+
+}
+
+.e:hover::after {
+    right: 0px;
+
+}
+
+.sear1 {
+    position: absolute;
+    top: 155px;
+    opacity: 0;
+    left: 80px;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    background: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+
+.e:hover .sear1 {
+    opacity: 1;
+    top: 110px;
+}
+
+.sear2 {
+    position: absolute;
+    top: 155px;
+    opacity: 0;
+    left: 145px;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    background: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.e:hover .sear2 {
+    opacity: 1;
+    top: 110px;
+}
+
+.f {
+    position: relative;
+    /* background: url(./6.jpg); */
+    /* background-size: 100% 100%; */
+    overflow: hidden;
+    transition-duration: 2s;
+}
+
+.f>img {
+    width: 100%;
+    height: 100%;
+    z-index: 123;
+
+
+}
+
+.f:hover img {
+
+    transform: rotate(1.2deg), scale(1.1);
+}
+
+.f::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50px;
+    top: 100px;
+    left: -50%;
+    background-color: rgb(233, 44, 75);
+    transition-duration: 0.5s;
+
+}
+
+.f:hover::before {
+    left: 0px;
+}
+
+.f::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50px;
+    top: 100px;
+    right: -50%;
+    transition-duration: 0.5s;
+    background-color: rgb(8, 2, 3);
+
+}
+
+.f:hover::after {
+    right: 0%;
+
+}
+
+.sear1 {
+    position: absolute;
+    top: 155px;
+    opacity: 0;
+    left: 80px;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    background: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+
+.f:hover .sear1 {
+    opacity: 1;
+    top: 110px;
+}
+
+.sear2 {
+    position: absolute;
+    top: 155px;
+    opacity: 0;
+    left: 145px;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    background: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.f:hover .sear2 {
+    opacity: 1;
+    top: 110px;
+}
+
+.g {
+    background: url(./7.jpg);
+    background-size: 100% 100%;
+}
+
+.g>h4 {
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.g>p {
+
+    height: 30px;
+    margin-left: 20px;
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+
+}
+
+.g>p::first-letter {
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+}
+
+
+
+.h {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+}
+
+.h {
+    position: relative;
+    background: url(./8.jpg);
+    background-size: 100% 100%;
+    z-index: 123;
+    overflow: hidden;
+    transition-duration: 2s;
+
+}
+
+
+.h:hover img {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.h::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50px;
+    top: 100px;
+    left: -50%;
+    background-color: rgb(233, 44, 75);
+    transition-duration: 0.5s;
+
+}
+
+.h:hover::before {
+    left: 0px;
+}
+
+.h::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50px;
+    top: 100px;
+    right: -50%;
+    transition-duration: 0.5s;
+    z-index: -1;
+    background-color: rgb(8, 2, 3);
+
+}
+
+.h:hover::after {
+    right: 0%;
+
+}
+
+.sear-h1 {
+    position: absolute;
+    top: 155px;
+    opacity: 0;
+    left: 215px;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    background: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+
+.h:hover .sear-h1 {
+    opacity: 1;
+    top: 110px;
+}
+
+.sear-h2 {
+    position: absolute;
+    top: 155px;
+    opacity: 0;
+    left: 285px;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    background: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.h:hover .sear-h2 {
+    opacity: 1;
+    top: 110px;
+}
+
+.h>img {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.i {
+    position: relative;
+    background: url(./9.jpg);
+    background-size: 100% 100%;
+    z-index: 123;
+    overflow: hidden;
+}
+
+.i::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50px;
+    top: 100px;
+    left: -50%;
+    background-color: rgb(233, 44, 75);
+    transition-duration: 0.5s;
+
+}
+
+.i:hover::before {
+    left: 0px;
+}
+
+.i::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50px;
+    top: 100px;
+    right: -50%;
+    transition-duration: 0.5s;
+    z-index: -1;
+    background-color: rgb(8, 2, 3);
+
+}
+
+.i:hover::after {
+    right: 0px;
+
+}
+
+.sear1 {
+    position: absolute;
+    top: 155px;
+    opacity: 0;
+    left: 80px;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    background: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+
+.i:hover .sear1 {
+    opacity: 1;
+    top: 110px;
+}
+
+.sear2 {
+    position: absolute;
+    top: 155px;
+    opacity: 0;
+    left: 145px;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    background: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.i:hover .sear2 {
+    opacity: 1;
+    top: 110px;
+}
+
+.j {
+    position: relative;
+}
+
+.j>img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.j>h1 {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+.butto {
+    position: absolute;
+    top: 130px;
+    left: 70px;
+    height: 44px;
+    width: 140px;
+    color: rgb(252, 247, 247);
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+    background-color: darkmagenta;
+}
+
+
+.k {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.k {
+    position: relative;
+    background: url(./11.jpg);
+    background-size: 100% 100%;
+    z-index: 123;
+    overflow: hidden;
+    transition-duration: 2s;
+
+}
+
+.k::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50px;
+    top: 100px;
+    left: -50%;
+    background-color: rgb(7, 5, 5);
+    transition-duration: 0.5s;
+
+}
+
+.k:hover::before {
+    left: 0px;
+}
+
+.k::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50px;
+    top: 100px;
+    right: -50%;
+    transition-duration: 0.5s;
+    z-index: -1;
+    background-color: rgb(122, 118, 118);
+
+}
+
+.k:hover::after {
+    right: 0%;
+
+}
+
+.sear-h1 {
+    position: absolute;
+    top: 155px;
+    opacity: 0;
+    left: 170px;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    background: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+
+.k:hover .sear-h1 {
+    opacity: 1;
+    top: 110px;
+}
+
+.sear-h2 {
+    position: absolute;
+    top: 155px;
+    opacity: 0;
+    left: 240px;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    background: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.k:hover .sear-h2 {
+    opacity: 1;
+    top: 110px;
+}
+
+
+.l {
+    position: relative;
+    background: url(./12.jpg);
+    background-size: 100% 100%;
+    z-index: 123;
+    overflow: hidden;
+}
+
+.l::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50px;
+    top: 100px;
+    left: -50%;
+    background-color: rgb(233, 44, 75);
+    transition-duration: 0.5s;
+
+}
+
+.l:hover::before {
+    left: 0px;
+}
+
+.l::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50px;
+    top: 100px;
+    right: -50%;
+    transition-duration: 0.5s;
+    z-index: -1;
+    background-color: rgb(8, 2, 3);
+
+}
+
+.l:hover::after {
+    right: 0px;
+
+}
+
+.sear1 {
+    position: absolute;
+    top: 155px;
+    opacity: 0;
+    left: 60px;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    background: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+
+.l:hover .sear1 {
+    opacity: 1;
+    top: 110px;
+}
+
+.sear2 {
+    position: absolute;
+    top: 155px;
+    opacity: 0;
+    left: 122px;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    background: white;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.l:hover .sear2 {
+    opacity: 1;
+    top: 110px;
+}
+
+.m {
+    position: relative;
+}
+
+.m>h1 {
+    position: absolute;
+    font-size: 35px;
+    top: 100px;
+    left: 50px;
+    color: white;
+
+}
+
+.speak {
+    position: absolute;
+    width: 60px;
+    top: 60px;
+    height: 35px;
+    left: 90px;
+
+}
+
+.speak>img {
+    width: 100%;
+    height: 100%;
+}
+
+.m>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.m>h1{
+    font-size: 26px;
+    margin-left: 10px;
+
+}
+.n {
+    position: relative;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.leverage {
+    position: absolute;
+    width: 350px;
+    height: 150px;
+    left: 99.5px;
+    top: 100px;
+    background-color: rgba(255, 255, 255, 0.829);
+}
+
+
+.left-quote {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 5px;
+    color: rgb(17, 10, 10);
+}
+
+.leverage>p {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    width: 300px;
+}
+.johnsmith{
+    margin-top: 100px;
+    margin-left: 250px;
+    font-size: 13px;
+}
+.n>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.footer{
+    width: 100%;
+    margin-top: 750px;
+    height: 400px;
+ background-color: rgb(222, 226, 226);
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.footer>img{
+    margin-left: 80px;
+    margin-top: 30px;
+    height: 35px;
+    width: 120px;
+ 
+}

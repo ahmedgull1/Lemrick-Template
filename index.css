@@ -1,0 +1,1128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav {
+    width: 100%;
+    height: 70px;
+
+}
+
+.a {
+    width: 300px;
+    padding-left: 30px;
+    padding-top: 15px;
+    border: 1px solid #000;
+}
+
+.navchild {
+    /* display: grid;
+    grid-template-columns: 85% 15%;
+    grid-template-rows: 70px; */
+    border-bottom: 1px solid #f3f2f2;
+    display: flex;
+    justify-content: space-between; 
+    padding-right: 30px;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
+    /* padding-left: 10px; */
+    border: 1px solid #000;
+    width: 150px;;
+
+
+}
+
+li {
+    padding-top: 30px;
+    list-style: none;
+    font-size: 15px;
+    font-family: sans-serif;
+
+}
+
+.parent {
+    position: relative;
+    display: grid;
+    top: 30px;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 25% 25% 25% 25%;
+
+
+
+}
+
+.a1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    transition-delay: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+
+.a1>img {
+    width: 100%;
+    height: 100%;
+    transition-duration: 5s;
+
+}
+
+.chil>img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+.a2 {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.a2::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: -50%;
+    background-color: rgb(241, 42, 75);
+    transition-duration: 0.5s;
+
+
+}
+
+.a2:hover::before {
+    left: 0%;
+}
+
+.a2::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: 100%;
+    background-color: rgb(8, 6, 6);
+    transition-duration: 0.5s;
+
+
+}
+
+.a2:hover::after {
+    left: 50%;
+}
+
+.sear1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 30%;
+    background-color: white;
+    border-radius: 5px;
+    visibility: hidden;
+    transition-duration: 0.5s;
+
+}
+
+
+.a2:hover .sear1 {
+    cursor: pointer;
+    top: 43%;
+    visibility: visible;
+
+}
+
+.sear1:hover {
+    background-color: black;
+    color: white;
+}
+
+.sear1 i {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+.sear2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 55%;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 10;
+    visibility: hidden;
+    transition-duration: 0.5s;
+}
+
+.a2:hover .sear2 {
+    cursor: pointer;
+    top: 43%;
+    visibility: visible;
+
+}
+
+.sear2:hover {
+    background-color: black;
+    color: white;
+}
+
+.sear2 i {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+
+.a3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.a4 {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.a4::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: -50%;
+    background-color: rgb(241, 42, 75);
+    transition-duration: 0.5s;
+
+
+}
+
+.a4:hover::before {
+    left: 0%;
+}
+
+.a4::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: 100%;
+    background-color: rgb(8, 6, 6);
+    transition-duration: 0.5s;
+
+
+}
+
+.a4:hover::after {
+    left: 50%;
+}
+
+.sear1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 30%;
+    background-color: white;
+    border-radius: 5px;
+    visibility: hidden;
+    transition-duration: 0.5s;
+
+}
+
+
+.a4:hover .sear1 {
+    cursor: pointer;
+    top: 43%;
+    visibility: visible;
+
+}
+
+.sear1:hover {
+    background-color: black;
+    color: white;
+}
+
+.sear1 i {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+.sear2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 55%;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 10;
+    visibility: hidden;
+    transition-duration: 0.5s;
+}
+
+.a4:hover .sear2 {
+    cursor: pointer;
+    top: 43%;
+    visibility: visible;
+
+}
+
+.sear2:hover {
+    background-color: black;
+    color: white;
+}
+
+.sear2 i {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+
+.a5 {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.a5::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: -50%;
+    background-color: rgb(241, 42, 75);
+    transition-duration: 0.5s;
+
+
+}
+
+.a5:hover::before {
+    left: 0%;
+}
+
+.a5::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: 100%;
+    background-color: rgb(194, 193, 193);
+    transition-duration: 0.5s;
+
+
+}
+
+.a5:hover::after {
+    left: 50%;
+}
+
+.sear1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 30%;
+    background-color: white;
+    border-radius: 5px;
+    visibility: hidden;
+    transition-duration: 0.5s;
+
+}
+
+
+.a5:hover .sear1 {
+    cursor: pointer;
+    top: 43%;
+    visibility: visible;
+
+}
+
+.sear1:hover {
+    background-color: black;
+    color: white;
+}
+
+.sear1 i {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+.sear2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 55%;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 10;
+    visibility: hidden;
+    transition-duration: 0.5s;
+}
+
+.a5:hover .sear2 {
+    cursor: pointer;
+    top: 43%;
+    visibility: visible;
+
+}
+
+.sear2:hover {
+    background-color: black;
+    color: white;
+}
+
+.sear2 i {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+
+.a6 {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.a6::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: -50%;
+    background-color: rgb(241, 67, 67);
+    transition-duration: 0.5s;
+
+
+}
+
+.a6:hover::before {
+    left: 0%;
+}
+
+.a6::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: 100%;
+    background-color: rgb(7, 5, 5);
+    transition-duration: 0.5s;
+
+
+}
+
+.a6:hover::after {
+    left: 50%;
+}
+
+.sear1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 30%;
+    background-color: white;
+    border-radius: 5px;
+    visibility: hidden;
+    transition-duration: 0.5s;
+
+}
+
+
+.a6:hover .sear1 {
+    cursor: pointer;
+    top: 43%;
+    visibility: visible;
+
+}
+
+.sear1:hover {
+    background-color: black;
+    color: white;
+}
+
+.sear1 i {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+.sear2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 55%;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 10;
+    visibility: hidden;
+    transition-duration: 0.5s;
+}
+
+.a6:hover .sear2 {
+    cursor: pointer;
+    top: 43%;
+    visibility: visible;
+
+}
+
+.sear2:hover {
+    background-color: black;
+    color: white;
+}
+
+.sear2 i {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+
+.a7 {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.a8 {
+    position: relative;
+    overflow: hidden;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+}
+
+.a8::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: -50%;
+    background-color: rgb(241, 67, 67);
+    transition-duration: 0.5s;
+
+}
+
+.a8:hover::before {
+    left: 0%;
+}
+
+.a8::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: 100%;
+    background-color: rgb(7, 5, 5);
+    transition-duration: 0.5s;
+
+
+}
+
+.a8:hover::after {
+    left: 50%;
+}
+
+.sear11 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 40%;
+    background-color: white;
+    border-radius: 5px;
+    visibility: hidden;
+    transition-duration: 0.5s;
+
+}
+
+
+.a8:hover .sear11 {
+    cursor: pointer;
+    top: 43%;
+    visibility: visible;
+
+}
+
+.sear11:hover {
+    background-color: black;
+    color: white;
+}
+
+.sear11 i {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+.sear22 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 52%;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 10;
+    visibility: hidden;
+    transition-duration: 0.5s;
+}
+
+.a8:hover .sear22 {
+    cursor: pointer;
+    top: 43%;
+    visibility: visible;
+
+}
+
+.sear22:hover {
+    background-color: black;
+    color: white;
+}
+
+.sear22 i {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+
+.a9 {
+    position: relative;
+    overflow: hidden;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+
+}
+
+.a9::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: -50%;
+    background-color: rgb(241, 67, 67);
+    transition-duration: 0.5s;
+
+}
+
+.a9:hover::before {
+    left: 0%;
+}
+
+.a9::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: 100%;
+    background-color: rgb(7, 5, 5);
+    transition-duration: 0.5s;
+
+
+}
+
+.a9:hover::after {
+    left: 50%;
+}
+
+.sear11 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 40%;
+    background-color: white;
+    border-radius: 5px;
+    visibility: hidden;
+    transition-duration: 0.5s;
+
+}
+
+
+.a9:hover .sear11 {
+    cursor: pointer;
+    top: 43%;
+    visibility: visible;
+
+}
+
+.sear11:hover {
+    background-color: black;
+    color: white;
+}
+
+.sear11 i {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+.sear22 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 52%;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 10;
+    visibility: hidden;
+    transition-duration: 0.5s;
+}
+
+.a9:hover .sear22 {
+    cursor: pointer;
+    top: 43%;
+    visibility: visible;
+
+}
+
+.sear22:hover {
+    background-color: black;
+    color: white;
+}
+
+.sear22 i {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+
+.a10 {
+    position: relative;
+    overflow: hidden;
+}
+
+.a10::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: -50%;
+    background-color: rgb(241, 67, 67);
+    transition-duration: 0.5s;
+
+
+}
+
+.a10:hover::before {
+    left: 0%;
+}
+
+.a10::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: 100%;
+    background-color: rgb(7, 5, 5);
+    transition-duration: 0.5s;
+
+
+}
+
+.a10:hover::after {
+    left: 50%;
+}
+
+.sear1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 30%;
+    background-color: white;
+    border-radius: 5px;
+    visibility: hidden;
+    transition-duration: 0.5s;
+
+}
+
+
+.a10:hover .sear1 {
+    cursor: pointer;
+    top: 43%;
+    visibility: visible;
+
+}
+
+.sear1:hover {
+    background-color: black;
+    color: white;
+}
+
+.sear1 i {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+.sear2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 55%;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 10;
+    visibility: hidden;
+    transition-duration: 0.5s;
+}
+
+.a10:hover .sear2 {
+    cursor: pointer;
+    top: 43%;
+    visibility: visible;
+
+}
+
+.sear2:hover {
+    background-color: black;
+    color: white;
+}
+
+.sear2 i {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+
+.a11 {
+    position: relative;
+    overflow: hidden;
+
+
+
+}
+
+.a12 {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.a12::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: -50%;
+    background-color: rgb(241, 67, 67);
+    transition-duration: 0.5s;
+
+
+}
+
+.a12:hover::before {
+    left: 0%;
+}
+
+.a12::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: 100%;
+    background-color: rgb(7, 5, 5);
+    transition-duration: 0.5s;
+
+
+}
+
+.a12:hover::after {
+    left: 50%;
+}
+
+.sear1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 30%;
+    background-color: white;
+    border-radius: 5px;
+    visibility: hidden;
+    transition-duration: 0.5s;
+
+}
+
+
+.a12:hover .sear1 {
+    cursor: pointer;
+    top: 43%;
+    visibility: visible;
+
+}
+
+.sear1:hover {
+    background-color: black;
+    color: white;
+}
+
+.sear1 i {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+.sear2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 65%;
+    left: 55%;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 10;
+    visibility: hidden;
+    transition-duration: 0.5s;
+}
+
+.a12:hover .sear2 {
+    cursor: pointer;
+    top: 43%;
+    visibility: visible;
+
+}
+
+.sear2:hover {
+    background-color: black;
+    color: white;
+}
+
+.sear2 i {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+
+
+.a13 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    overflow: hidden;
+    position: relative;
+
+
+}
+
+.a14 {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.footer {
+    position: relative;
+    background-color: rgb(216, 218, 219);
+    padding-bottom: 20px;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.footer>p {
+    text-align: center;
+}
+
+.footer>.foot>img {
+    padding: 40px;
+}
+
+.ico {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .b {
+        display: none;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
+    }
+
+    .a1 {
+        grid-area: 1/1/2/2;
+    }
+
+    .a2 {
+        grid-area: 1/2/2/3;
+
+    }
+
+    .a3 {
+        grid-area: 2/1/3/2;
+
+    }
+
+    .a4 {
+        grid-area: 2/2/3/3;
+
+    }
+
+    .a5 {
+        grid-area: 3/1/4/2;
+
+    }
+
+    .a6 {
+        grid-area: 3/2/4/3;
+
+    }
+
+    .a7 {
+        grid-area: 4/1/5/2;
+
+    }
+
+    .a8 {
+        grid-area: 4/2/5/3;
+    }
+
+    .a9 {
+        grid-area: 5/1/6/2;
+    }
+
+    .a10 {
+        grid-area: 5/2/6/3;
+    }
+
+    .a11 {
+        grid-area: 6/1/7/2;
+    }
+
+    .a12 {
+        grid-area: 6/2/7/3;
+    }
+
+    .a13 {
+        grid-area: 7/1/8/2;
+    }
+
+    .a14 {
+        grid-area: 7/2/8/3;
+    }
+}
+
+
+@media screen and (max-width:300px) {
+    .parent {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+    }
+
+    .a1 {
+        grid-area: 1/1/1/1;
+    }
+
+    .a2 {
+        grid-area: 2/1/3/2;
+    }
+
+    .a3 {
+        grid-area: 3/1/4/2;
+    }
+
+    .a4 {
+        grid-area: 4/1/5/2;
+    }
+
+    .a5 {
+        grid-area: 5/1/6/2;
+    }
+
+    .a6 {
+        grid-area: 6/1/7/2;
+    }
+
+    .a7 {
+        grid-area: 7/1/8/2;
+    }
+
+    .a8 {
+        grid-area: 8/1/9/2;
+    }
+
+    .a9 {
+        grid-area: 9/1/10/2;
+    }
+
+    .a10 {
+        grid-area: 10/1/11/2;
+    }
+
+    .a11 {
+        grid-area: 11/1/12/2;
+    }
+
+    .a12 {
+        grid-area: 12/1/13/2;
+    }
+
+    .a13 {
+        grid-area: 13/1/14/2;
+    }
+
+    .a14 {
+        grid-area: 14/1/15/2;
+    }
+
+}
